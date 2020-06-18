@@ -1,7 +1,6 @@
 import React from "react";
 import { PokePetsApp } from "./Components/PokePetsApp";
-import { createMuiTheme } from "@material-ui/core/styles";
-import { ThemeProvider } from "@material-ui/styles";
+import { createMuiTheme, ThemeProvider, CssBaseline } from "@material-ui/core";
 import "./App.css";
 
 const darkTheme = createMuiTheme({
@@ -13,6 +12,7 @@ const darkTheme = createMuiTheme({
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
       <PokePetsApp />
     </ThemeProvider>
   );

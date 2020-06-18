@@ -1,0 +1,16 @@
+export const birb = require("./birb.jpg");
+export const braniac_fish = require("./braniac_fish.jpg");
+export const card_back = require("./card_back.jpg");
+export const electrified_guin_piggo = require("./electrified_g_piggo.jpg");
+export const ferret = require("./ferret.jpg");
+export const flying_pug = require("./flying_pug.jpg");
+export const glam_dog = require("./glam_dog.jpg");
+export const guinea_pig = require("./guinea_pig.jpg");
+export const hungry_hamster = require("./hungry_hamster.jpg");
+export const irritable_kitty = require("./irritable_kitty.jpg");
+export const komodo_dragon = require("./komodo_dragon.jpg");
+export const scaredy_cat = require("./scaredy_cat.jpg");
+export const smart_doggo = require("./smart_doggo.jpg");
+export const tarantula = require("./tarantula.jpg");
+export const tiger_king = require("./tiger_king.jpg");
+export const wise_old_monkey = require("./wise_old_monkey.jpg");
