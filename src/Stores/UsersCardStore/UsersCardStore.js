@@ -1,10 +1,10 @@
 import { types } from "mobx-state-tree";
-import { CARD_STORE } from "../constants";
+import { USERS_CARD_STORE } from "../constants";
 import { CardModel } from "../../Models/CardModel/cardModel";
 
-export const CardStore = types
-  .model(CARD_STORE, {
-    jobMap: types.map(CardModel),
+export const UsersCardStore = types
+  .model(USERS_CARD_STORE, {
+    usersCardMap: types.map(CardModel),
   })
   .volatile((self) => ({}))
   .views((self) => ({}))

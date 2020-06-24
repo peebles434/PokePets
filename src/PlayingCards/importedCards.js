@@ -28,6 +28,7 @@ export const importedCards = [
     name: "Birb",
     image: birb,
     hp: 100,
+    rarity: 100,
     attack1: {
       name: "attack one",
       dmg: 10,
@@ -44,6 +45,7 @@ export const importedCards = [
     name: "Braniac Fish",
     image: braniac_fish,
     hp: 100,
+    rarity: 100,
     attack1: {
       name: "attack one",
       dmg: 10,
@@ -57,7 +59,7 @@ export const importedCards = [
   },
   {
     id: "electrified_guin_piggo",
-    name: "Electrified Guin Piggo",
+    name: "Static Guin Piggo",
     image: electrified_guin_piggo,
     hp: 100,
     attack1: {
@@ -76,6 +78,7 @@ export const importedCards = [
     name: "Ferret",
     image: ferret,
     hp: 100,
+    rarity: 100,
     attack1: {
       name: "attack one",
       dmg: 10,
@@ -92,6 +95,7 @@ export const importedCards = [
     name: "Flying Pug",
     image: flying_pug,
     hp: 100,
+    rarity: 100,
     attack1: {
       name: "attack one",
       dmg: 10,
@@ -108,6 +112,7 @@ export const importedCards = [
     name: "Glam Dog",
     image: glam_dog,
     hp: 100,
+    rarity: 100,
     attack1: {
       name: "attack one",
       dmg: 10,
@@ -124,6 +129,7 @@ export const importedCards = [
     name: "Guinea Pig",
     image: guinea_pig,
     hp: 100,
+    rarity: 100,
     attack1: {
       name: "attack one",
       dmg: 10,
@@ -140,6 +146,7 @@ export const importedCards = [
     name: "Hungry Hamster",
     image: hungry_hamster,
     hp: 100,
+    rarity: 100,
     attack1: {
       name: "attack one",
       dmg: 10,
@@ -156,6 +163,7 @@ export const importedCards = [
     name: "Irritable Kitty",
     image: irritable_kitty,
     hp: 100,
+    rarity: 100,
     attack1: {
       name: "attack one",
       dmg: 10,
@@ -172,6 +180,7 @@ export const importedCards = [
     name: "Bearded Dragon",
     image: bearded_dragon,
     hp: 100,
+    rarity: 100,
     attack1: {
       name: "attack one",
       dmg: 10,
@@ -188,6 +197,7 @@ export const importedCards = [
     name: "Scaredy Cat",
     image: scaredy_cat,
     hp: 100,
+    rarity: 100,
     attack1: {
       name: "attack one",
       dmg: 10,
@@ -204,6 +214,7 @@ export const importedCards = [
     name: "Smart Doggo",
     image: smart_doggo,
     hp: 100,
+    rarity: 100,
     attack1: {
       name: "attack one",
       dmg: 10,
@@ -220,6 +231,7 @@ export const importedCards = [
     name: "Tarantula",
     image: tarantula,
     hp: 100,
+    rarity: 100,
     attack1: {
       name: "attack one",
       dmg: 10,
@@ -236,6 +248,7 @@ export const importedCards = [
     name: "Tiger King",
     image: tiger_king,
     hp: 100,
+    rarity: 100,
     attack1: {
       name: "attack one",
       dmg: 10,
@@ -252,6 +265,7 @@ export const importedCards = [
     name: "Wise Old Monkey",
     image: wise_old_monkey,
     hp: 100,
+    rarity: 100,
     attack1: {
       name: "attack one",
       dmg: 10,

@@ -1,1 +1,1 @@
-export const CARD_STORE = "CARD_STORE";
+export const USERS_CARD_STORE = "USERS_CARD_STORE";

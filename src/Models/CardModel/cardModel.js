@@ -10,6 +10,7 @@ export const JobModel = types
     hp: types.string,
     attack1: types.model(attackModel),
     attack2: types.model(attackModel),
+    rarity: types.string,
   })
   .volatile((self) => ({}))
   .views((self) => ({}))
