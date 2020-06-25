@@ -1,7 +1,7 @@
 .playingCard {
   margin: 10px;
   border: 6px solid white;
-  background-color: #424242 !important;
+  background-color: rgba(255, 255, 255, 0.12) !important;
 }
 
 .cardHeader {
@@ -42,4 +42,32 @@
 .attackDetails {
   margin: 0 12% 0 12%;
   font-size: 0.7rem;
+}
+
+.bench {
+  display: flex;
+}
+
+.battleContainer {
+  height: 290px;
+  display: flex;
+  justify-content: center;
+}
+
+.awayBench {
+  margin-left: auto !important;
+  margin-right: 10px !important;
+}
+
+.homeBench {
+  margin-left: 10px !important;
+}
+
+.MuiPaper-root h2 {
+  max-height: 10%;
+}
+
+.battleInfo {
+  max-height: 75%;
+  margin-top: 0px !important;
 }

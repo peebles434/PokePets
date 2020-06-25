@@ -6,12 +6,12 @@ import "../App.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 175,
-    height: 275,
+    width: 200,
+    height: 270,
   },
   media: {
     height: 0,
-    paddingTop: "70%",
+    paddingTop: "60%",
     marginRight: "10%",
     marginLeft: "10%",
   },
