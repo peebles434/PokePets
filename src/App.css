@@ -1,3 +1,4 @@
+/* BATTLEDISPLAY CSS */
 .playingCard {
   margin: 10px;
   border: 6px solid white;
@@ -70,4 +71,9 @@
 .battleInfo {
   max-height: 75%;
   margin-top: 0px !important;
+}
+
+/* SHOPDISPLAY CSS */
+.shopOptions {
+  display: flex;
 }

@@ -1,8 +1,6 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { createMuiTheme, ThemeProvider, CssBaseline } from "@material-ui/core";
-import { GameDisplay } from "./Components/GameDisplay";
-import { Header } from "./Components/Header";
 import { AppRouter } from "./routers/AppRouter";
 import "./App.css";
 
