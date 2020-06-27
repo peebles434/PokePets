@@ -1,1 +1,3 @@
-export const USERS_CARD_STORE = "USERS_CARD_STORE";
+export const USER_CARD_STORE = "USER_CARD_STORE";
+export const BENCH_CARD_STORE = "BENCH_CARD_STORE";
+export const SHOP_CARD_STORE = "SHOP_CARD_STORE";
