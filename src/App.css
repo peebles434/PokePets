@@ -76,4 +76,16 @@
 /* SHOPDISPLAY CSS */
 .shopOptions {
   display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.shopButtons {
+  width: 200px;
+  height: 200px;
+  font-size: 2rem !important;
+}
+
+.shopButtonDivs {
+  margin: 0px 5px 0px 5px;
 }
