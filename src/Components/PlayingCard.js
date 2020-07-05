@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const PlayingCard = observer(({ card }) => {
-  console.log(card);
   const classes = useStyles();
   const cardClasses = `playingCard ${classes.root}`;
   return (

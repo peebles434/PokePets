@@ -1,17 +1,22 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
-import Drawer from "@material-ui/core/Drawer";
-import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
+import {
+  Drawer,
+  IconButton,
+  List,
+  Divider,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+} from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import List from "@material-ui/core/List";
-import Divider from "@material-ui/core/Divider";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
+import HomeIcon from "@material-ui/icons/Home";
+import ColorizeIcon from "@material-ui/icons/Colorize";
+import StoreIcon from "@material-ui/icons/Store";
+import PersonIcon from "@material-ui/icons/Person";
 
 const useStyles = makeStyles({
   list: {
@@ -24,12 +29,22 @@ const useStyles = makeStyles({
 
 export const NavMenu = () => {
   const classes = useStyles();
+  const history = useHistory();
   const [state, setState] = React.useState({
-    top: false,
     left: false,
-    bottom: false,
-    right: false,
   });
+
+  const homeClickHandler = () => {
+    history.push("/");
+  };
+
+  const battleClickHandler = () => {
+    history.push("/battle");
+  };
+
+  const shopClickHandler = () => {
+    history.push("/shop");
+  };
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -52,25 +67,39 @@ export const NavMenu = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        <ListItem button key="Home" onClick={homeClickHandler}>
+          <ListItemIcon>
+            <HomeIcon />
+          </ListItemIcon>
+          <ListItemText primary="Home" />
+        </ListItem>
+        <ListItem button key="Battle" onClick={battleClickHandler}>
+          <ListItemIcon>
+            <ColorizeIcon />
+          </ListItemIcon>
+          <ListItemText primary="Battle" />
+        </ListItem>
+        <ListItem button key="Shop" onClick={shopClickHandler}>
+          <ListItemIcon>
+            <StoreIcon />
+          </ListItemIcon>
+          <ListItemText primary="Shop" />
+        </ListItem>
       </List>
       <Divider />
       <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        <ListItem button key="Messanger">
+          <ListItemIcon>
+            <MailIcon />
+          </ListItemIcon>
+          <ListItemText primary="Messanger" />
+        </ListItem>
+        <ListItem button key="Account">
+          <ListItemIcon>
+            <PersonIcon />
+          </ListItemIcon>
+          <ListItemText primary="Account" />
+        </ListItem>
       </List>
     </div>
   );

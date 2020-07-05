@@ -1,5 +1,6 @@
 import React from "react";
 import { Header } from "../Components/Header";
+import { HomeDisplay } from "../Components/HomeDisplay";
 import { GameDisplay } from "../Components/GameDisplay";
 import { ShopDisplay } from "../Components/ShopDisplay";
 import { NotFoundPage } from "../Components/NotFoundPage";
@@ -10,7 +11,8 @@ export const AppRouter = () => (
     <div>
       <Header />
       <Switch>
-        <Route path="/" component={GameDisplay} exact={true} />
+        <Route path="/" component={HomeDisplay} exact={true} />
+        <Route path="/battle" component={GameDisplay} exact={true} />
         <Route path="/shop" component={ShopDisplay} exact={true} />
         <Route component={NotFoundPage} />
       </Switch>
