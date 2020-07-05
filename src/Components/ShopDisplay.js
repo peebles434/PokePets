@@ -1,32 +1,14 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { Button } from "@material-ui/core";
-import { createMuiTheme } from "@material-ui/core/styles";
-import { ThemeProvider } from "@material-ui/styles";
-import { amber, grey } from "@material-ui/core/colors";
-
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: amber[800],
-    },
-    secondary: {
-      main: grey[400],
-    },
-    status: {
-      danger: amber[500],
-    },
-  },
-});
 
 export const ShopDisplay = observer(() => {
   return (
-    <ThemeProvider theme={theme}>
+    <div>
       <div className="shopOptions">
         <div className="shopButtonDivs">
           <Button
-            className="shopButtons"
-            color="primary"
+            className="shopButtons brzShopButton"
             variant="contained"
             size="large"
           >
@@ -35,8 +17,7 @@ export const ShopDisplay = observer(() => {
         </div>
         <div className="shopButtonDivs">
           <Button
-            className="shopButtons"
-            color="secondary"
+            className="shopButtons silShopButton"
             variant="contained"
             size="large"
           >
@@ -45,8 +26,7 @@ export const ShopDisplay = observer(() => {
         </div>
         <div className="shopButtonDivs">
           <Button
-            className="shopButtons"
-            color="status"
+            className="shopButtons gldShopButton"
             variant="contained"
             size="large"
           >
@@ -54,6 +34,6 @@ export const ShopDisplay = observer(() => {
           </Button>
         </div>
       </div>
-    </ThemeProvider>
+    </div>
   );
 });
