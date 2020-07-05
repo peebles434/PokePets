@@ -1,4 +1,5 @@
 import React from "react";
+import { NavMenu } from "./NavMenu";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -26,14 +27,7 @@ export const Header = () => {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="menu"
-          >
-            <MenuIcon />
-          </IconButton>
+          <NavMenu />
           <Typography variant="h6" className={classes.title}>
             PokePets
           </Typography>
