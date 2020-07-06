@@ -17,6 +17,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import ColorizeIcon from "@material-ui/icons/Colorize";
 import StoreIcon from "@material-ui/icons/Store";
 import PersonIcon from "@material-ui/icons/Person";
+import ViewCarouselIcon from "@material-ui/icons/ViewCarousel";
 
 const useStyles = makeStyles({
   list: {
@@ -36,6 +37,10 @@ export const NavMenu = () => {
 
   const homeClickHandler = () => {
     history.push("/");
+  };
+
+  const collectionClickHandler = () => {
+    history.push("/collection");
   };
 
   const battleClickHandler = () => {
@@ -73,6 +78,12 @@ export const NavMenu = () => {
           </ListItemIcon>
           <ListItemText primary="Home" />
         </ListItem>
+        <ListItem button key="CardCollection" onClick={collectionClickHandler}>
+          <ListItemIcon>
+            <ViewCarouselIcon />
+          </ListItemIcon>
+          <ListItemText primary="Card Collection" />
+        </ListItem>
         <ListItem button key="Battle" onClick={battleClickHandler}>
           <ListItemIcon>
             <ColorizeIcon />
@@ -88,11 +99,11 @@ export const NavMenu = () => {
       </List>
       <Divider />
       <List>
-        <ListItem button key="Messanger">
+        <ListItem button key="Messenger">
           <ListItemIcon>
             <MailIcon />
           </ListItemIcon>
-          <ListItemText primary="Messanger" />
+          <ListItemText primary="Messenger" />
         </ListItem>
         <ListItem button key="Account">
           <ListItemIcon>
